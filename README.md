@@ -3,18 +3,18 @@ The Car Managing Application
 
 What do you want to do?
 - Save User Data
-  ```
-  Request:
+    ```
+    Request:
     {
         email:String
     }
-  Reponse:
+    Reponse:
     {
         !error
     }
 - Save car information
     ```
-  Request:
+    Request:
     {
         id:String,
         company:String,
@@ -22,15 +22,15 @@ What do you want to do?
         make:String,
         color:String
     }
-  Reponse:
+    Reponse:
     {
         !error
     }
 - List car information
     ```
-  Request:
+    Request:
     {}
-  Reponse:
+    Reponse:
     {
         cars:
         [
@@ -45,7 +45,7 @@ What do you want to do?
     }
 - Record oil change
     ```
-  Request:
+    Request:
     {
         oilType:String,
         meterReading:Number,
@@ -58,20 +58,20 @@ What do you want to do?
         expiryDate:Date,
         note:String
     }
-  Response:
+    Response:
     {
         !error
     }
 - Record distance travelled
     ```
-  Request:
+    Request:
     {
         startDateTime:String,
         endDateTime:String,
         distance:Number,
         carId:String
     }
-  Reponse:
+    Reponse:
     {
         !error
     }
