@@ -2,7 +2,7 @@
 The Car Managing Application
 
 What do you want to do?
-- Save User Data
+- Register User
     ```
     Request:
     {
@@ -12,7 +12,7 @@ What do you want to do?
     {
         !error
     }
-- Save car information
+- Save Car
     ```
     Request:
     {
@@ -26,7 +26,7 @@ What do you want to do?
     {
         !error
     }
-- List car information
+- List Cars
     ```
     Request:
     {}
@@ -43,7 +43,7 @@ What do you want to do?
             }
         ]
     }
-- Record oil change
+- Record Oil Change
     ```
     Request:
     {
@@ -62,7 +62,7 @@ What do you want to do?
     {
         !error
     }
-- Record distance travelled
+- Record Distance Travelled
     ```
     Request:
     {
@@ -75,4 +75,4 @@ What do you want to do?
     {
         !error
     }
-- Car maintainence
+- Car Maintenance
