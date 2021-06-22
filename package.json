@@ -1,0 +1,28 @@
+{
+  "name": "paiye",
+  "version": "1.0.0",
+  "description": "The Car Managing Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node-dev --respawn src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s4r1m/paiye.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s4r1m/paiye/issues"
+  },
+  "homepage": "https://github.com/s4r1m/paiye#readme",
+  "devDependencies": {
+    "prettier": "2.3.1",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.4"
+  }
+}
