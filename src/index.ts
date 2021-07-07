@@ -1,7 +1,9 @@
-import { newUser } from "./entities/user";
+import { newServer } from "./http/server";
+import { newInMemUserRepository } from "./inmem/user";
+import { newRegistrationService } from "./usecases/registerUser";
 
-console.log("paiye from ts, wut")
+let inMemUserRepo = newInMemUserRepository();
+let registrationService = newRegistrationService(inMemUserRepo);
+let server = newServer(registrationService);
 
-let jarri = newUser("jarri1337@gmail.com")
-
-console.log("Created a new user:", jarri.getEmail())
+server.start();

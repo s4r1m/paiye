@@ -1,19 +1,22 @@
-
 export interface User {
-    getEmail: () => String
+  email: String;
+}
+
+export interface UserRepository {
+  save: (user: User) => User;
 }
 
 export function newUser(email: String): User {
-    if (!isValidEmail(email)) {
-        throw new Error("Invalid email address.")
-    }
+  if (!isValidEmail(email)) {
+    throw new Error("Invalid email address.");
+  }
 
-    return Object.freeze({
-        getEmail: () => email,
-    })
+  return Object.freeze({
+    email: email,
+  });
 }
 
 function isValidEmail(email: String): Boolean {
-    // some validation
-    return true
+  // some validation
+  return true;
 }
