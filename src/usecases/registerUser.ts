@@ -8,12 +8,14 @@ export function newRegistrationService(
   userRepo: UserRepository
 ): RegistrationService {
   return Object.freeze({
-    register: (email: String) => register(userRepo, email),
+    register: (email: String) => makeRegister(userRepo),
   });
 }
 
-function register(userRepo: UserRepository, email: String): User {
-  const user = newUser(email);
-  userRepo.save(user);
-  return user;
+function makeRegister(userRepo: UserRepository): (email: String) => User {
+  return function register(email: String): User {
+    const user = newUser(email);
+    userRepo.save(user);
+    return user;
+  }
 }
