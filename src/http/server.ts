@@ -9,9 +9,7 @@ export function newServer(registrationService: RegistrationService): Server {
   const app = express();
   app.use(express.json());
 
-  /*
-  {"email":"hello@123.com"}
-  */
+  // Request Body: { "email": "hello@123.com" }
   app.put("/register", function (req, res) {
     res.send(registrationService.register(req.body.email));
   });
