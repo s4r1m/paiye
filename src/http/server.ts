@@ -1,5 +1,5 @@
 import express from "express";
-import { RegistrationService } from "../usecases/registerUser";
+import { RegistrationService } from "../usecases/registration";
 
 export interface Server {
   start: () => void;
