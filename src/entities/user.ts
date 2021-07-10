@@ -18,5 +18,8 @@ export function newUser(email: String): User {
 
 function isValidEmail(email: String): Boolean {
   // some validation
+  if (!email.includes("@")) {
+    return false;
+  }
   return true;
 }
