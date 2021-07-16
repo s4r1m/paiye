@@ -1,6 +1,6 @@
 import { newUser } from "./user";
 
-test("can create a new user", () => {
+test("user can be created", () => {
   expect(newUser("hello@hi.com")).toEqual({ email: "hello@hi.com" });
 });
 
