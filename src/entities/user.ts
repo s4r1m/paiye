@@ -8,7 +8,7 @@ export interface UserRepository {
 
 export function newUser(email: String): User {
   if (!isValidEmail(email)) {
-    throw new Error("Invalid email address.");
+    throw new Error("Invalid email address");
   }
 
   return Object.freeze({
@@ -18,5 +18,8 @@ export function newUser(email: String): User {
 
 function isValidEmail(email: String): Boolean {
   // some validation
+  if (!email.includes("@")) {
+    return false;
+  }
   return true;
 }
