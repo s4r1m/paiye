@@ -2,14 +2,14 @@ import { newCar } from "./car";
 
 /*
 {
-    id:String,
-    company:String,
-    model:Number,
-    make:String,
-    color:String
+  id:String,
+  company:String,
+  model:Number,
+  make:String,
+  color:String
 }
 */
-test("car can be linked", () => {
+test("car can be created", () => {
   expect(
     newCar({
       id: "ABC-123",
